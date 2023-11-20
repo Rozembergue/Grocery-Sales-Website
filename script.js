@@ -177,13 +177,13 @@ const reviewsData = [
     stars: 4.5
   },
   {
-    imgSrc: '/image/profile-4.jpg',
+    imgSrc: 'image/profile-4.jpg',
     altText: 'Emma Abigail',
     reviewText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
     stars: 4.5
   },
   {
-    imgSrc: '/image/profile-3.jpg',
+    imgSrc: 'image/profile-3.jpg',
     altText: 'Josh Smith',
     reviewText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
     stars: 4.5
@@ -195,7 +195,7 @@ const reviewsData = [
     stars: 5
   },
   {
-    imgSrc: '/image/profile-4.jpg',
+    imgSrc: 'image/profile-4.jpg',
     altText: 'Bella Miller',
     reviewText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
     stars: 4.5
