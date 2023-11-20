@@ -171,7 +171,7 @@ function removeFromCart(price, item) {
     // Custemer's Review
 const reviewsData = [
   {
-    imgSrc: 'https://github.com/Rozembergue/Grocery-Sales-Website/blob/main/image/profile-2.jpg',
+    imgSrc: '/image/profile-2.jpg',
     altText: 'Jones Miller',
     reviewText: 'Lorem ipsum dolor sit amet consectetur adipisicing elit...',
     stars: 4.5
