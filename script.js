@@ -32,7 +32,7 @@ document.querySelector('#menu-btn').onclick = () => {
 };
 
 window.onscroll = () => {
-  toggleActive(null); // Remover ativação de todos os elementos ao rolar a página
+  toggleActive(null); // Remove activation of all elements when scrolling the page
 };
 
 // products starts
