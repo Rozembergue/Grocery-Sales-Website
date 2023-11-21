@@ -113,7 +113,9 @@ const productContainer = document.getElementById('productContainer');
 const shopCart = document.getElementById('shopping-cart');
 const listCart = document.getElementById('cart');
 const totalSpan = document.getElementById('total');
+const cartCount = document.getElementById('cart-count');
 let total = 0;
+let itemCount = 0;
 
 products.forEach(product => {
   const slide = document.createElement('div');
@@ -126,13 +128,22 @@ products.forEach(product => {
     <div class="stars">
         ${generateStars(product.stars)}
     </div>
-    <button class="add-btn">add to cart</button>`;
+    <button class="add-btn" >add to cart</button>`;
 
     productContainer.appendChild(slide);
 
     const addButton = slide.querySelector('.add-btn');
     addButton.addEventListener('click', () => addToCart(product));
 });
+
+function updateCartCountVisibility() {
+  cartCount
+  if (itemCount > 0) {
+    cartCount.style.display = 'flex';
+  } else {
+    cartCount.style.display = 'none';
+  }
+}
 
 // Add to cart
 function addToCart(product) {
@@ -160,12 +171,24 @@ function addToCart(product) {
   const removeButton = li.querySelector('.trash-icon');
   removeButton.addEventListener('click', () => removeFromCart(price, li));
   li.appendChild(removeButton);
+
+  itemCount++;
+  updateCartCount(itemCount);
+  updateCartCountVisibility();
 }
 
 function removeFromCart(price, item) {
   total -= price;
   totalSpan.innerText = total.toFixed(2);
   listCart.removeChild(item);
+
+  itemCount--;
+  updateCartCount(itemCount);
+  updateCartCountVisibility();
+}
+
+function updateCartCount(count) {
+  cartCount.textContent = count;
 }
     
     // Custemer's Review

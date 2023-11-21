@@ -121,6 +121,19 @@ section {
     background: var(--orange);
     color: #fff;
 }
+.header .icons #cart-count {
+    position: absolute;
+    display: flex;
+    top: 1.8rem;
+    background-color: var(--orange);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
 
 #menu-btn {
     display: none;
